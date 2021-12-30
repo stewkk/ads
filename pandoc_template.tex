@@ -1,5 +1,25 @@
-\usepackage[utf8]{inputenc}
-\usepackage[russian, english]{babel}
-\babelfont{rm}{Droid Serif}
-\babelfont{sf}{Droid Sans}
-\babelfont{tt}{MesloLGS NF}
+\usepackage{fontspec}
+\usepackage{iftex}
+\ifXeTeX{}
+   \setmainfont{cmun}[
+    Extension=.otf,UprightFont=*rm,ItalicFont=*ti,
+    BoldFont=*bx,BoldItalicFont=*bi,
+   ]
+   \setsansfont{cmun}[
+    Extension=.otf,UprightFont=*ss,ItalicFont=*si,
+    BoldFont=*sx,BoldItalicFont=*so,
+   ]
+   \setmonofont{cmun}[
+    Extension=.otf,UprightFont=*btl,ItalicFont=*bto,
+    BoldFont=*tb,BoldItalicFont=*tx,
+   ]
+\else
+   \setmainfont{CMU Serif}
+   \setsansfont{CMU Sans Serif}
+   \setmonofont{CMU Typewriter Text}
+\fi
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage{polyglossia}
+\usepackage[autostyle=true]{csquotes}
+\setdefaultlanguage{english}
+\setotherlanguage{russian}
