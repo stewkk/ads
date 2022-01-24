@@ -218,6 +218,8 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#домашние-задания-по-курсу-алгоритмы-и-структуры-данных">Домашние задания по курсу «Алгоритмы и структуры данных»</a>
+<ul>
 <li><a href="#отправка-домашних-работ">Отправка домашних работ</a></li>
 <li><a href="#изучение-языка-c">1. Изучение языка C</a>
 <ul>
@@ -273,28 +275,26 @@
 <li><a href="#слияние-последовательностей-merge.c">3.5 Слияние последовательностей (<code>merge.c</code>)</a></li>
 <li><a href="#моделирование-работы-вычислительного-кластера-cluster.c">3.6 Моделирование работы вычислительного кластера (<code>cluster.c</code>)</a></li>
 <li><a href="#сортировка-списка-вставками-listisort.c">3.7 Сортировка списка вставками (<code>listisort.c</code>)</a></li>
-<li><a href="#сортировка-списка-пузырьком-listbsort.c">3.8 Сортировка списка пузырьком (<code>listbsort.c</code>)</a>
-<ul>
+<li><a href="#сортировка-списка-пузырьком-listbsort.c">3.8 Сортировка списка пузырьком (<code>listbsort.c</code>)</a></li>
 <li><a href="#ранги-элементов-в-списке-с-пропусками-ranklist.c">3.9 Ранги элементов в списке с пропусками (<code>ranklist.c</code>)</a></li>
-</ul></li>
 <li><a href="#ранги-вершин-бинарного-дерева-поиска-ranktree.c">3.10 Ранги вершин бинарного дерева поиска (<code>ranktree.c</code>)</a></li>
-<li><a href="#лексический-анализ-lexavl.c">3.11 Лексический анализ (<code>lexavl.c</code>)</a>
-<ul>
+<li><a href="#лексический-анализ-lexavl.c">3.11 Лексический анализ (<code>lexavl.c</code>)</a></li>
 <li><a href="#разреженный-массив-disparray.c">3.12 Разреженный массив (<code>disparray.c</code>)</a></li>
-</ul></li>
 <li><a href="#количество-подпоследовательностей-на-которых-побитовое-исключающее-или-даёт-ноль-zeroxor.c">3.13 Количество подпоследовательностей, на которых побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ даёт ноль (<code>zeroxor.c</code>)</a></li>
 <li><a href="#строки-с-общими-префиксами-ptrie.c">3.14 Строки с общими префиксами (<code>ptrie.c</code>)</a></li>
 </ul></li>
+</ul></li>
 </ul>
 </nav>
-<h1 id="отправка-домашних-работ">Отправка домашних работ</h1>
+<h1 id="домашние-задания-по-курсу-алгоритмы-и-структуры-данных">Домашние задания по курсу «Алгоритмы и структуры данных»</h1>
+<h2 id="отправка-домашних-работ">Отправка домашних работ</h2>
 <ul>
 <li>Домашние работы следует отправлять на ящик <code>avkonovalov@bmstu.ru</code> с ящика <code>…@student.bmstu.ru</code>.</li>
 <li>Заголовок письма должен начинаться со слова <code>HOMEWORK</code>.</li>
 <li>Файл присылается во вложении. Имя файла должно быть таким, которое указано в задании.</li>
 </ul>
-<h1 id="изучение-языка-c">1. Изучение языка C</h1>
-<h2 id="полином-polynom.c">1.1 Полином (<code>polynom.c</code>)</h2>
+<h2 id="изучение-языка-c">1. Изучение языка C</h2>
+<h3 id="полином-polynom.c">1.1 Полином (<code>polynom.c</code>)</h3>
 <p>Составьте программу <code>polynom.c</code>, вычисляющую значение полинома</p>
 <p><span class="math display">\[P_n (x) = a_n x^n + a_{n- 1} x^{n -1} + \ldots + a_1 x + a_0\]</span></p>
 <p>и его производной в заданной точке <span class="math inline">\(x_0\)</span>. Коэффициенты полинома и значение <span class="math inline">\(x_0\)</span> — целые числа в диапазоне от <span class="math inline">\(-2^{63}\)</span> до <span class="math inline">\(2^{63} - 1\)</span>.</p>
@@ -304,7 +304,7 @@
 <p>Например, согласно схеме Горнера</p>
 <p><span class="math display">\[P_4 (x) = 3x^4 + 2x^3 - 5x^2 + x - 4 = (((3x + 2) x - 5)x + 1)x - 4.\]</span></p>
 <p>Для вычисления значения производной полинома необходимо очевидным образом модифицировать схему Горнера.</p>
-<h2 id="произведение-чисел-по-модулю-mulmod.c">1.2 Произведение чисел по модулю (<code>mulmod.c</code>)</h2>
+<h3 id="произведение-чисел-по-модулю-mulmod.c">1.2 Произведение чисел по модулю (<code>mulmod.c</code>)</h3>
 <p>Составьте программу <code>mulmod.c</code>, вычисляющую выражение <span class="math inline">\(\left(a\cdot b\right)\textrm{ mod }m\)</span>, то есть остаток от деления произведения чисел <span class="math inline">\(a\)</span> и <span class="math inline">\(b\)</span> на <span class="math inline">\(m\)</span>. Известно, что <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> и <span class="math inline">\(m\)</span> — натуральные числа, меньшие, чем <span class="math inline">\(2^{63}\)</span>, причем <span class="math inline">\(m \ne 0\)</span>.</p>
 <p>Программа должна считывать из стандартного потока ввода числа <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> и <span class="math inline">\(m\)</span> и выводить результат в стандартный поток вывода.</p>
 <p>Основная сложность этой задачи заключается в том, что произведение <span class="math inline">\(a\)</span> на <span class="math inline">\(b\)</span> может превышать <span class="math inline">\(2^{64}\)</span> и, тем самым, не помещаться ни в один из целочисленных типов данных языка C. При этом представление формулы в виде <span class="math display">\[\left(\left(a\textrm{ mod }m\right)\cdot\left(b\textrm{ mod }m\right)\right)\textrm{ mod }m\]</span> тоже не решает проблемы, так как при больших значениях <span class="math inline">\(m\)</span> произведение <span class="math display">\[\left(a\textrm{ mod }m\right)\cdot\left(b\textrm{ mod }m\right)\]</span> тоже может превышать <span class="math inline">\(2^{64}\)</span>.</p>
@@ -319,7 +319,7 @@
 <p>Учитывая, что для любых <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> и <span class="math inline">\(m \ne 0\)</span> справедливы тождества</p>
 <p><span class="math display">\[\left(x+y\right)\textrm{ mod }m\equiv\left(\left(x\textrm{ mod }m\right)+\left(y\textrm{ mod }m\right)\right)\textrm{ mod }m,\]</span> <span class="math display">\[\left(x\cdot y\right)\textrm{ mod }m\equiv\left(\left(x\textrm{ mod }m\right)\cdot\left(y\textrm{ mod }m\right)\right)\textrm{ mod }m,\]</span></p>
 <p>мы имеем право при вычислении правой части нашей формулы поступать следующим образом: если есть возможность того, что сумма двух слагаемых превзойдёт <span class="math inline">\(2^{64}\)</span>, нужно складывать остатки от деления этих слагаемых на <span class="math inline">\(m\)</span>; аналогично для произведения. Этот приём даёт гарантию того, что при вычислении ни разу не произойдёт переполнение.</p>
-<h2 id="фибоначчиева-система-счисления-fibsys.c">1.3 Фибоначчиева система счисления (<code>fibsys.c</code>)</h2>
+<h3 id="фибоначчиева-система-счисления-fibsys.c">1.3 Фибоначчиева система счисления (<code>fibsys.c</code>)</h3>
 <p>Числа Фибоначчи — это последовательность натуральных чисел {<span class="math inline">\(f_{i}\)</span>}, в которой</p>
 <p><span class="math display">\[\begin{cases}f_{0}=f_{1}=1,\\f_{i}=f_{i-2}+f_{i-1}, &amp; \forall i&gt;1.\end{cases}\]</span></p>
 <p>По теореме Цекендорфа любое положительное целое число может быть единственным образом представлено в виде суммы различных чисел Фибоначчи, не включающей двух подряд идущих чисел Фибоначчи.</p>
@@ -335,27 +335,27 @@
 <p>Для того чтобы гарантировать единственность записи числа в фибоначчиевой системе счисления, запись числа не должна содержать две подряд идущие единицы (теорема Цекендорфа).</p>
 <p>Составьте программу <code>fibsys.c</code>, выполняющую перевод целого числа <span class="math inline">\(0\leq x&lt;2^{63}\)</span> в фибоначчиеву систему счисления.</p>
 <p>Программа должна считывать из стандартного потока ввода число <span class="math inline">\(x\)</span> и выводить в стандартный поток вывода последовательность нулей и единиц, образующую запись числа <span class="math inline">\(x\)</span> в фибоначчиевой системе счисления.</p>
-<h2 id="пересечение-множеств-intersect.c">1.4 Пересечение множеств (<code>intersect.c</code>)</h2>
+<h3 id="пересечение-множеств-intersect.c">1.4 Пересечение множеств (<code>intersect.c</code>)</h3>
 <p>Пусть <span class="math inline">\(\mathbb{N}\_{32}\)</span> — множество натуральных чисел от 0 до 31. Даны два множества <span class="math inline">\(A\subseteq\mathbb{N}\_{32}\)</span> и <span class="math inline">\(B\subseteq\mathbb{N}\_{32}\)</span>. Составьте программу <code>intersect.c</code>, вычисляющую пересечение множеств <span class="math inline">\(A\)</span> и <span class="math inline">\(B\)</span>.</p>
 <p>Программа должна считывать из стандартного потока ввода размер множества <span class="math inline">\(A\)</span> и элементы множества <span class="math inline">\(A\)</span>, а затем — размер множества <span class="math inline">\(B\)</span> и элементы множества <span class="math inline">\(B\)</span>. Программа должна выводить в стандартный поток вывода элементы множества <span class="math inline">\(A\cap B\)</span>, отсортированные в порядке возрастания.</p>
 <p>Использовать массивы для хранения множеств запрещается: каждое множество должно быть представлено 32-разрядным целым числом таким, что если его <span class="math inline">\(i\)</span>-й бит равен 1, то число <span class="math inline">\(i\)</span> принадлежит множеству.</p>
-<h2 id="перестановка-элементов-массива-permut.c">1.5 Перестановка элементов массива (<code>permut.c</code>)</h2>
+<h3 id="перестановка-элементов-массива-permut.c">1.5 Перестановка элементов массива (<code>permut.c</code>)</h3>
 <p>Даны два целочисленных массива размером <span class="math inline">\(8\)</span> элементов. Составьте программу <code>permut.c</code>, определяющую, можно ли получить один массив перестановкой элементов другого массива.</p>
 <p>Программа должна считывать из стандартного потока ввода элементы обоих массивов, а затем выводить в стандартный поток вывода слово «<code>yes</code>», если массивы совпадают с точностью до перестановки элементов, и «<code>no</code>» — в противном случае.</p>
 <p>Сортировать массивы запрещается.</p>
-<h2 id="максимальная-сумма-подряд-идущих-элементов-массива-maxk.c">1.6 Максимальная сумма подряд идущих элементов массива (<code>maxk.c</code>)</h2>
+<h3 id="максимальная-сумма-подряд-идущих-элементов-массива-maxk.c">1.6 Максимальная сумма подряд идущих элементов массива (<code>maxk.c</code>)</h3>
 <p>Дан целочисленный массив, размер которого не превышает <span class="math inline">\(1\,000\,000\)</span>, и число <span class="math inline">\(k\)</span>, которое меньше или равно длине массива. Составьте программу <code>maxk.c</code>, определяющую, какие <span class="math inline">\(k\)</span> подряд идущих элементов массива имеют максимальную сумму.</p>
 <p>Программа должна считывать из стандартного потока ввода размер массива, его элементы и число <span class="math inline">\(k\)</span>, а затем выводить в стандартный поток вывода максимальную сумму <span class="math inline">\(k\)</span> подряд идущих элементов массива.</p>
 <p>В программе запрещается обращаться к одному и тому же элементу массива более двух раз, а также объявлять какие бы то ни было вспомогательные массивы.</p>
-<h2 id="наибольший-простой-делитель-primediv.c">1.7 Наибольший простой делитель (<code>primediv.c</code>)</h2>
+<h3 id="наибольший-простой-делитель-primediv.c">1.7 Наибольший простой делитель (<code>primediv.c</code>)</h3>
 <p>Составьте программу <code>primediv.c</code>, вычисляющую наибольший простой делитель некоторого числа <span class="math inline">\(x\)</span>. Число <span class="math inline">\(x\)</span> вводится со стандартного потока ввода, причём известно, что <span class="math inline">\(-2^{31} \le x &lt; 2^{31}\)</span>.</p>
 <p>Программа должна использовать решето Эратосфена для построения массива простых чисел.</p>
-<h2 id="седловая-точка-в-матрице-saddlepoint.c">1.8 Седловая точка в матрице (<code>saddlepoint.c</code>)</h2>
+<h3 id="седловая-точка-в-матрице-saddlepoint.c">1.8 Седловая точка в матрице (<code>saddlepoint.c</code>)</h3>
 <p>Элемент двумерного массива называется седловым, если он одновременно наибольший в своей строке и наименьший в своём столбце.</p>
 <p>Дан целочисленный двумерный массив, размер которого не превышает <span class="math inline">\(10 \times 10\)</span>. Известно, что все элементы массива различны. Составьте программу <code>saddlepoint.c</code>, определяющую седловую точку в этом массиве.</p>
 <p>Программа должна считывать из стандартного потока ввода количество строк и столбцов двумерного массива и его элементы. Программа должна вывести в стандартный поток координаты найденной седловой точки или слово «<code>none</code>», если седловой точки не существует.</p>
 <p>В программе запрещается обращаться к одному и тому же элементу массива дважды.</p>
-<h2 id="функция-обращения-массива-revarray.c">1.9 Функция обращения массива (<code>revarray.c</code>)</h2>
+<h3 id="функция-обращения-массива-revarray.c">1.9 Функция обращения массива (<code>revarray.c</code>)</h3>
 <p>Составьте функцию <code>revarray</code>, переставляющую элементы любого массива в обратном порядке. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> revarray<span class="op">(</span><span class="dt">void</span> <span class="op">*</span>base<span class="op">,</span> <span class="dt">size_t</span> nel<span class="op">,</span> <span class="dt">size_t</span> width<span class="op">)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -363,7 +363,7 @@
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Здесь параметр <code>base</code> означает указатель на начало массива, <code>nel</code> — количество элементов в массиве, а <code>width</code> — размер каждого элемента массива в байтах.</p>
 <p><strong>Примечание.</strong> Тип <code>size_t</code> определён в заголовочных файлах <code>&lt;stddef.h&gt;</code>, <code>&lt;stdio.h&gt;</code>, <code>&lt;stdlib.h&gt;</code>, <code>&lt;string.h&gt;</code>, <code>&lt;time.h&gt;</code> и <code>&lt;wchar.h&gt;</code>.</p>
-<h2 id="функция-поиска-максимального-элемента-в-массиве-maxarray.c">1.10 Функция поиска максимального элемента в массиве (<code>maxarray.c</code>)</h2>
+<h3 id="функция-поиска-максимального-элемента-в-массиве-maxarray.c">1.10 Функция поиска максимального элемента в массиве (<code>maxarray.c</code>)</h3>
 <p>Составьте функцию <code>maxarray</code>, возвращающую индекс максимального элемента произвольного массива. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> maxarray<span class="op">(</span><span class="dt">void</span> <span class="op">*</span>base<span class="op">,</span> <span class="dt">size_t</span> nel<span class="op">,</span> <span class="dt">size_t</span> width<span class="op">,</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> <span class="op">(*</span>compare<span class="op">)(</span><span class="dt">void</span> <span class="op">*</span>a<span class="op">,</span> <span class="dt">void</span> <span class="op">*</span>b<span class="op">))</span></span>
@@ -372,7 +372,7 @@
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Здесь параметр <code>base</code> означает указатель на начало массива, <code>nel</code> — количество элементов в массиве, <code>width</code> — размер каждого элемента массива в байтах, а <code>compare</code> — указатель на функцию сравнения двух элементов, работающую аналогично функции сравнения для библиотечной функции <code>qsort</code>.</p>
 <p><strong>Примечание.</strong> Тип <code>size_t</code> определён в заголовочных файлах <code>&lt;stddef.h&gt;</code>, <code>&lt;stdio.h&gt;</code>, <code>&lt;stdlib.h&gt;</code>, <code>&lt;string.h&gt;</code>, <code>&lt;time.h&gt;</code> и <code>&lt;wchar.h&gt;</code>.</p>
-<h2 id="функция-бинарного-поиска-в-последовательности-binsearch.c">1.11 Функция бинарного поиска в последовательности (<code>binsearch.c</code>)</h2>
+<h3 id="функция-бинарного-поиска-в-последовательности-binsearch.c">1.11 Функция бинарного поиска в последовательности (<code>binsearch.c</code>)</h3>
 <p>Составьте функцию <code>binsearch</code>, выполняющую поиск заданного числа в последовательности чисел, отсортированной по возрастанию, методом деления пополам. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> <span class="dt">long</span> binsearch<span class="op">(</span><span class="dt">unsigned</span> <span class="dt">long</span> nel<span class="op">,</span> <span class="dt">int</span> <span class="op">(*</span>compare<span class="op">)(</span><span class="dt">unsigned</span> <span class="dt">long</span> i<span class="op">))</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -385,7 +385,7 @@
 <li><span class="math inline">\(1\)</span>, если <code>i</code>-тое число больше искомого числа.</li>
 </ul>
 <p>Функция <code>binsearch</code> должна возвращать индекс найденного элемента или значение <code>nel</code>, если такого элемента не существует.</p>
-<h2 id="функция-поиска-пика-в-последовательности-peak.c">1.12 Функция поиска пика в последовательности (<code>peak.c</code>)</h2>
+<h3 id="функция-поиска-пика-в-последовательности-peak.c">1.12 Функция поиска пика в последовательности (<code>peak.c</code>)</h3>
 <p>Элемент последовательности чисел, значение которого — не меньше значений его непосредственных соседей, называется <strong>пиком</strong>. Очевидно, что непустая последовательность размера <span class="math inline">\(n\)</span> имеет от <span class="math inline">\(1\)</span> до <span class="math inline">\(n\)</span> пиков.</p>
 <p>Составьте функцию <code>peak</code>, возвращающую индекс любого пика в последовательности. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> <span class="dt">long</span> peak<span class="op">(</span><span class="dt">unsigned</span> <span class="dt">long</span> nel<span class="op">,</span></span>
@@ -394,7 +394,7 @@
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="op">...</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Здесь параметр <code>nel</code> задаёт количество элементов в последовательности, а параметр <code>less</code> — указатель на функцию сравнения, которая принимает два параметра — <code>i</code> и <code>j</code> — и возвращает <span class="math inline">\(1\)</span>, если <code>i</code>-тое число в последовательности меньше <code>j</code>-того числа, и <span class="math inline">\(0\)</span> — в противном случае.</p>
-<h2 id="конкатенация-строк-concat.c">1.13 Конкатенация строк (<code>concat.c</code>)</h2>
+<h3 id="конкатенация-строк-concat.c">1.13 Конкатенация строк (<code>concat.c</code>)</h3>
 <p>Составьте функцию <code>concat</code>, выполняющую конкатенацию произвольного количества строк:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">char</span> <span class="op">*</span>concat<span class="op">(</span><span class="dt">char</span> <span class="op">**</span>s<span class="op">,</span> <span class="dt">int</span> n<span class="op">)</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -403,7 +403,7 @@
 <p>Здесь <code>s</code> — указатель на массив соединяемых строк, <code>n</code> — количество строк в массиве. Функция должна создавать в динамической памяти новую строку, размер которой равен суммарному размеру всех соединяемых строк, записывать в неё соединяемые строки друг за другом в том порядке, в котором они перечислены в массиве, и возвращать указатель на новую строку.</p>
 <p>Программа <code>concat.c</code>, демонстрирующая работоспособность функции <code>concat</code>, должна считывать со стандартного потока ввода количество строк и сами соединяемые строки и выводить в стандартный поток вывода результирующую строку.</p>
 <p>В автотестах длины строк, подаваемых на стандартный ввод, не превышают <span class="math inline">\(1000\)</span> символов. Однако, аргументы функции <code>concat()</code> могут иметь произвольную длину.</p>
-<h2 id="подсчёт-слов-в-строке-wcount.c">1.14 Подсчёт слов в строке (<code>wcount.c</code>)</h2>
+<h3 id="подсчёт-слов-в-строке-wcount.c">1.14 Подсчёт слов в строке (<code>wcount.c</code>)</h3>
 <p>Составьте функцию <code>wcount</code>, вычисляющую количество слов в строке. Слово — это подстрока, не содержащая пробелов. Слова разделяются произвольным количеством пробелов. Кроме того, строка может начинаться и заканчиваться произвольным количеством пробелов. Объявление функции должно выглядеть как</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> wcount<span class="op">(</span><span class="dt">char</span> <span class="op">*</span>s<span class="op">)</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -411,7 +411,7 @@
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Итоговую программу, содержащую как функцию <code>wcount</code>, так и функцию <code>main</code>, демонстрирующую работоспособность функции <code>wcount</code>, нужно назвать <code>wcount.c</code>. Строка должна считываться из стандартного потока ввода с помощью функции <code>gets</code> или <code>fgets</code>, минимальный размер буфера — <span class="math inline">\(1000\)</span> символов, включая концевой нуль.</p>
 <p><strong>Примечание.</strong> Функция <code>fgets</code>, в отличие от <code>gets</code>, добавляет <code>\n</code> в конец прочитанной строки.</p>
-<h2 id="фибоначчиевы-строки-fibstr.c">1.15 Фибоначчиевы строки (<code>fibstr.c</code>)</h2>
+<h3 id="фибоначчиевы-строки-fibstr.c">1.15 Фибоначчиевы строки (<code>fibstr.c</code>)</h3>
 <p><strong>Строки Фибоначчи</strong> — это последовательность строк <span class="math inline">\(\{s_i\}\)</span>, составвленных из букв <span class="math inline">\(a\)</span> и <span class="math inline">\(b\)</span>, в которой</p>
 <p><span class="math display">\[\begin{cases}s_{1}=a,\\s_{2}=b,\\s_{i}=s_{i-2}s_{i-1}, &amp; \forall i&gt;2.\end{cases}\]</span></p>
 <p>Чтобы было понятнее, приведём первые пять строк Фибоначчи: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(ab\)</span>, <span class="math inline">\(bab\)</span>, <span class="math inline">\(abbab\)</span>.</p>
@@ -422,7 +422,7 @@
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Функция <code>fibstr</code> должна выделять в динамической памяти массив такого размера, чтобы в него как раз поместилась <span class="math inline">\(n\)</span>-ная строка Фибоначчи. Ответственность за освобождение памяти, занятой строкой, лежит на функции, вызывающей функцию <code>fibstr</code>.</p>
 <p>Составьте программу <code>fibstr.c</code>, демонстрирующую работоспособность составленной функции.</p>
-<h2 id="функция-побитового-сравнения-строк-strdiff.c">1.16 Функция побитового сравнения строк (<code>strdiff.c</code>)</h2>
+<h3 id="функция-побитового-сравнения-строк-strdiff.c">1.16 Функция побитового сравнения строк (<code>strdiff.c</code>)</h3>
 <p>Составьте функцию <code>strdiff</code>, выполняющую побитовое сравнение двух строк. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> strdiff<span class="op">(</span><span class="dt">char</span> <span class="op">*</span>a<span class="op">,</span> <span class="dt">char</span> <span class="op">*</span>b<span class="op">)</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -435,7 +435,7 @@
 00000000 &amp; \underbrace{01101001} &amp; \underbrace{01100001}\\
 &amp; i &amp; a\end{array}\]</span></p>
 <p>Эти строки совпадают до <span class="math inline">\(11\)</span> бита (биты нумеруются, начиная с <span class="math inline">\(0\)</span>).</p>
-<h2 id="рисование-рамки-frame.c">1.17 Рисование рамки (<code>frame.c</code>)</h2>
+<h3 id="рисование-рамки-frame.c">1.17 Рисование рамки (<code>frame.c</code>)</h3>
 <p>Составьте программу <code>frame.c</code>, выполняющую рисование рамки вокруг текстовой строки. Программа должна принимать в качестве аргументов командной строки размеры рамки и значение строки.</p>
 <p>Например, пусть программа вызвана как</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./frame</span> 6 20 Abracadabra</span></code></pre></div>
@@ -450,7 +450,7 @@
 <p>Если программа вызвана с неправильным количеством аргументов командной строки, необходимо вывести подсказку</p>
 <pre><code>Usage: frame &lt;height&gt; &lt;width&gt; &lt;text&gt;</code></pre>
 <p>Из-за ограничений системы автоматического тестирования код возврата программы всегда должен быть равен <code>0</code>, даже при ошибочных данных.</p>
-<h2 id="функция-поиска-в-лисповском-списке-searchlist.c">1.18 Функция поиска в лисповском списке (<code>searchlist.c</code>)</h2>
+<h3 id="функция-поиска-в-лисповском-списке-searchlist.c">1.18 Функция поиска в лисповском списке (<code>searchlist.c</code>)</h3>
 <p>Пусть в гипотетическом интерпретаторе языка Lisp элемент списка представлен в памяти структурой <code>Elem</code>, которая объявлена в заголовочном файле <a href="elem.h"><code>elem.h</code></a> следующим образом:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#ifndef ELEM_H_INCLUDED</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define ELEM_H_INCLUDED</span></span>
@@ -485,15 +485,15 @@
 <p>Здесь параметр <code>list</code> означает указатель на первый элемент списка, <code>k</code> — искомое целое число.</p>
 <p>Функция <code>searchlist</code> должна возвращать указатель на найденный элемент списка или <code>NULL</code>, если элемент, содержащий число <code>k</code>, не найден.</p>
 <p><strong>Указание.</strong> Добавьте в файл с решением <code>#include "elem.h"</code> (он есть в среде тестирования) или целиком определение структуры <code>struct Elem</code>, скопировав её из условия задачи. Скачать файл: <a href="elem.h"><code>elem.h</code></a>.</p>
-<h1 id="алгоритмы-сортировки-и-поиска">2. Алгоритмы сортировки и поиска</h1>
-<h2 id="кратчайшая-суперстрока-superstr.c">2.1 Кратчайшая суперстрока (<code>superstr.c</code>)</h2>
+<h2 id="алгоритмы-сортировки-и-поиска">2. Алгоритмы сортировки и поиска</h2>
+<h3 id="кратчайшая-суперстрока-superstr.c">2.1 Кратчайшая суперстрока (<code>superstr.c</code>)</h3>
 <p>Пусть дано множество из <span class="math inline">\(n\)</span> строк, где <span class="math inline">\(0 &lt; n \le 10\)</span>. Известно, что ни одна из этих строк не является подстрокой другой строки. Составьте программу <code>superstr.c</code>, вычисляющую длину кратчайшей строки, содержащей все эти строки в качестве подстрок.</p>
 <p>Программа должна считывать из стандартного потока ввода число <span class="math inline">\(n\)</span>, а затем <span class="math inline">\(n\)</span> строк. Длина кратчайшей строки, содержащей все <span class="math inline">\(n\)</span> считанных строк, должна выводиться в стандартный поток вывода.</p>
-<h2 id="суммы-образующие-степени-двойки-power2.c">2.2 Суммы, образующие степени двойки (<code>power2.c</code>)</h2>
+<h3 id="суммы-образующие-степени-двойки-power2.c">2.2 Суммы, образующие степени двойки (<code>power2.c</code>)</h3>
 <p>Пусть дана последовательность из <span class="math inline">\(n\)</span> неповторяющихся целых чисел, где <span class="math inline">\(0 &lt; \le 24\)</span>, и каждое целое число находится в диапазоне от <span class="math inline">\(-10^6\)</span> до <span class="math inline">\(10^6\)</span>.</p>
 <p>Составьте программу <code>power2.c</code>, вычисляющую, сколько существует непустых сочетаний чисел из последовательности таких, что сумма чисел в сочетании равна степени числа <span class="math inline">\(2\)</span>.</p>
 <p>Программа должна считывать из стандартного потока ввода число <span class="math inline">\(n\)</span>, а затем <span class="math inline">\(n\)</span> чисел, образующих последовательность. Программа должна выводить количество сочетаний в стандартный поток вывода.</p>
-<h2 id="функция-двунаправленной-пузырьковой-сортировки-bubblesort.c">2.3 Функция двунаправленной пузырьковой сортировки (<code>bubblesort.c</code>)</h2>
+<h3 id="функция-двунаправленной-пузырьковой-сортировки-bubblesort.c">2.3 Функция двунаправленной пузырьковой сортировки (<code>bubblesort.c</code>)</h3>
 <p>В классической сортировке пузырьком проход по сортируемой последовательности осуществляется всегда в одном направлении. Модифицируйте алгоритм сортировки пузырьком, чтобы в нём чередовались проходы по последовательности слева направо и справа налево.</p>
 <p>Составьте функцию <code>bubblesort</code>, осуществляющую двунаправленную пузырьковую сортировку произвольной последовательности. Функция должна быть объявлена как</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> bubblesort<span class="op">(</span><span class="dt">unsigned</span> <span class="dt">long</span> nel<span class="op">,</span></span>
@@ -508,7 +508,7 @@
 <li><code>compare</code> — указатель на функцию сравнения, которая возвращает <span class="math inline">\(-1\)</span>, если <span class="math inline">\(i\)</span>-й элемент меньше <span class="math inline">\(j\)</span>-го, <span class="math inline">\(0\)</span> — в случае, если <span class="math inline">\(i\)</span>-й элемент равен <span class="math inline">\(j\)</span>-му, и <span class="math inline">\(1\)</span> — в случае, если <span class="math inline">\(i\)</span>-й элемент больше <span class="math inline">\(j\)</span>-го;</li>
 <li><code>swap</code> — указатель на функцию обмена <span class="math inline">\(i\)</span>-го и <span class="math inline">\(j\)</span>-го элементов последовательности.</li>
 </ul>
-<h2 id="функция-сортировки-методом-шелла-shellsort.c">2.4 Функция сортировки методом Шелла (<code>shellsort.c</code>)</h2>
+<h3 id="функция-сортировки-методом-шелла-shellsort.c">2.4 Функция сортировки методом Шелла (<code>shellsort.c</code>)</h3>
 <p>В классической сортировке втавками для вставки элемента в отсортированную часть последовательности выполняется сравнение элемента со всеми членами отсортированной части до тех пор, пока для него не будет найдено место, то есть переменная <span class="math inline">\(loc\)</span> (см. алгоритм в лекциях) на каждой итерции внутреннего цикла уменьшается на единицу.</p>
 <p>Метод Шелла является модификацией сортировки вставками, в которой переменная <span class="math inline">\(loc\)</span> на каждой итерции внутреннего цикла уменьшается на некоторое число <span class="math inline">\(d \ge 1\)</span>. При этом фактически сортировка выполняется несколько раз для всё меньших и меньших значений <span class="math inline">\(d\)</span> до тех пор, пока <span class="math inline">\(d\)</span> не станет равно <span class="math inline">\(1\)</span>. Тем самым, сначала выполняется серия «грубых» сортировок, которые не дают точного ответа, но делают последовательность более упорядоченной, обеспечивая более быстрое выполнение финальной точной сортировки при <span class="math inline">\(d = 1\)</span>.</p>
 <p>Составьте функцию <code>shellsort</code>, выполняющую сортировку произвольной последовательности методом Шелла. Функция <code>shellsort</code> должна быть объявлена как</p>
@@ -525,7 +525,7 @@
 <li><code>swap</code> — указатель на функцию обмена <span class="math inline">\(i\)</span>-то и <span class="math inline">\(j\)</span>-го элементов последовательности.</li>
 </ul>
 <p>Значения расстояния <span class="math inline">\(d\)</span> в ходе работы функции должны образовывать последовательность Фибоначчи (естественно, записанную задом наперёд). Первое значение в этой последовательности должно быть максимальным числом Фибоначчи, которое меньше значения параметра <code>nel</code>.</p>
-<h2 id="сортировка-подсчётом-сравнений-csort.c">2.5 Сортировка подсчётом сравнений (<code>csort.c</code>)</h2>
+<h3 id="сортировка-подсчётом-сравнений-csort.c">2.5 Сортировка подсчётом сравнений (<code>csort.c</code>)</h3>
 <p>Составьте функцию <code>сsort</code>, выполняющую сортировку слов в предложении методом подсчёта сравнений. Слова в предложении разделяются произвольным количеством пробелов. Функция <code>csort</code> должна быть объявлена следующим образом:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> csort<span class="op">(</span><span class="dt">char</span> <span class="op">*</span>src<span class="op">,</span> <span class="dt">char</span> <span class="op">*</span>dest<span class="op">)</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
@@ -538,7 +538,7 @@
 <pre><code>t x y aa bb zz qqq www rrr</code></pre>
 <p>Итоговую программу, содержащую как функцию <code>csort</code>, так и функцию <code>main</code>, демонстрирующую работоспособность функции <code>csort</code>, нужно назвать <code>csort.c</code>. Программа должна считывать исходное предложение со стандартного потока ввода.</p>
 <p>Минимальный размер буфера для ввода с консоли должен быть равен <span class="math inline">\(1000\)</span> символов включая <code>\0</code> в конце строки.</p>
-<h2 id="пирамидальная-сортировка-heapsort.c">2.6 Пирамидальная сортировка (<code>heapsort.c</code>)</h2>
+<h3 id="пирамидальная-сортировка-heapsort.c">2.6 Пирамидальная сортировка (<code>heapsort.c</code>)</h3>
 <p>Составьте функцию <code>hsort</code>, выполняющую пирамидальную сортировку произвольного массива. Объявление функции <code>hsort</code> должно быть выполнено по аналогии с функцией <code>qsort</code>:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> hsort<span class="op">(</span><span class="dt">void</span> <span class="op">*</span>base<span class="op">,</span> <span class="dt">size_t</span> nel<span class="op">,</span> <span class="dt">size_t</span> width<span class="op">,</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> <span class="op">(*</span>compare<span class="op">)(</span><span class="at">const</span> <span class="dt">void</span> <span class="op">*</span>a<span class="op">,</span> <span class="at">const</span> <span class="dt">void</span> <span class="op">*</span>b<span class="op">))</span></span>
@@ -553,22 +553,22 @@
 </ul>
 <p>Итоговая программа <code>heapsort.c</code> должна сортировать массив строк в порядке возрастания количества букв <strong><code>a</code></strong> в строке. Программа должна считывать из стандартного потока ввода размер и элементы массива, и выводить в стандартный поток вывода результат сортировки.</p>
 <p>Минимальный размер буфера для ввода с консоли должен быть равен <span class="math inline">\(1000\)</span> символов включая <code>\0</code> в конце строки.</p>
-<h2 id="сортировка-слиянием-вставками-mergesort.c">2.7 Сортировка слиянием + вставками (<code>mergesort.c</code>)</h2>
+<h3 id="сортировка-слиянием-вставками-mergesort.c">2.7 Сортировка слиянием + вставками (<code>mergesort.c</code>)</h3>
 <p>Составьте программу <code>mergesort.c</code>, осуществляющую сортировку массива целых чисел в порядке возрастания модуля числа.</p>
 <p>В программе должен быть реализован алгоритм сортировки слиянием, рекурсивную функцию которого нужно модифицировать таким образом, чтобы для последовательностей длиной меньше <span class="math inline">\(5\)</span> выполнялась сортировка вставками.</p>
 <p>Размер и элементы массива должны считываться программой из стандартного потока ввода. Результат сортировки должен быть выведен в стандартный поток вывода.</p>
-<h2 id="быстрая-сортировка-сортировка-прямым-выбором-quicksort.c">2.8 Быстрая сортировка + сортировка прямым выбором (<code>quicksort.c</code>)</h2>
+<h3 id="быстрая-сортировка-сортировка-прямым-выбором-quicksort.c">2.8 Быстрая сортировка + сортировка прямым выбором (<code>quicksort.c</code>)</h3>
 <p>Составьте программу <code>quicksort.c</code>, осуществляющую сортировку массива целых чисел в порядке возрастания.</p>
 <p>В программе должен быть реализован алгоритм быстрой сортировки, рекурсивную функцию которого нужно модифицировать таким образом, чтобы, во-первых, для последовательностей длиной меньше <span class="math inline">\(m\)</span> выполнялась сортировка прямым выбором, а во-вторых, глубина стека вызовов была равна <span class="math inline">\(O\left(\lg n\right)\)</span>, где <span class="math inline">\(n\)</span> — размер массива.</p>
 <p>Программа должна считывать со стандартного потока ввода размер массива <span class="math inline">\(n\)</span>, число <span class="math inline">\(m\)</span> и значения элементов массива. В стандартный поток вывода должны выводиться элементы отсортированного массива.</p>
-<h2 id="сортировка-букв-в-строке-dsort.c">2.9 Сортировка букв в строке (<code>dsort.c</code>)</h2>
+<h3 id="сортировка-букв-в-строке-dsort.c">2.9 Сортировка букв в строке (<code>dsort.c</code>)</h3>
 <p>Составьте программу <code>dsort.c</code>, осуществляющую сортировку латинских букв в строке в алфавитном порядке (размер строки — до миллиона букв). В программе должен быть реализован алгоритм сортировки распределением.</p>
 <p>Например, если введена строка</p>
 <pre><code>encyclopedia</code></pre>
 <p>то программа должна выводить в стандартный поток вывода</p>
 <pre><code>accdeeilnopy</code></pre>
 <p>Строка вводится со стандартного потока ввода, причём известно, что она содержит только маленькие латинские буквы.</p>
-<h2 id="поразрядная-сортировка-дат-datesort.c">2.10 Поразрядная сортировка дат (<code>datesort.c</code>)</h2>
+<h3 id="поразрядная-сортировка-дат-datesort.c">2.10 Поразрядная сортировка дат (<code>datesort.c</code>)</h3>
 <p>Составьте программу <code>datesort.c</code>, осуществляющую сортировку последовательности дат по возрастанию. В программе должен быть реализован алгоритм поразрядной сортировки, адаптированный для случая, когда ключи представляются в системе счисления с основаниями, зависящими от разряда.</p>
 <p>В программе сортируемая последовательность должна быть представлена в виде массива структур <code>Date</code>:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> Date <span class="op">{</span></span>
@@ -590,7 +590,7 @@
 2004 02 29
 2005 01 12</code></pre>
 <p><strong>Указание.</strong> Формат вывода для <code>printf()</code>: <code>"%04d %02d %02d"</code>.</p>
-<h2 id="поразрядная-сортировка-целых-чисел-radixsort.c">2.11 Поразрядная сортировка целых чисел (<code>radixsort.c</code>)</h2>
+<h3 id="поразрядная-сортировка-целых-чисел-radixsort.c">2.11 Поразрядная сортировка целых чисел (<code>radixsort.c</code>)</h3>
 <p>Составьте программу <code>radixsort.c</code>, осуществляющую сортировку последовательности <span class="math inline">\(32\)</span>-разрядных целых чисел по возрастанию. В программе должен быть реализован алгоритм поразрядной сортировки.</p>
 <p>Программа должна считывать из стандартного потока ввода размер и элементы последовательности, и записывать в стандартный поток вывода элементы отсортированной последовательности.</p>
 <p>Например, если на вход программы подано</p>
@@ -604,7 +604,7 @@
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unsigned</span> <span class="dt">char</span> bytes<span class="op">[</span><span class="dv">4</span><span class="op">];</span></span>
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
 <p>Тем самым подразумевается, что целые числа представлены в системе счисления по основанию <span class="math inline">\(256\)</span>. Доступ к отдельным байтам целого числа должен осуществляться через поле <code>bytes</code> объединения.</p>
-<h2 id="периодические-префиксы-prefixes.c">2.12 Периодические префиксы (<code>prefixes.c</code>)</h2>
+<h3 id="периодические-префиксы-prefixes.c">2.12 Периодические префиксы (<code>prefixes.c</code>)</h3>
 <p>Составьте программу <code>prefixes.c</code>, выполняющую поиск всех периодических префиксов заданной строки <span class="math inline">\(S\)</span>. Префикс является периодическим, если его можно представить в виде</p>
 <p><span class="math display">\[\underset{k}{\underbrace{dd\ldots d}},\]</span></p>
 <p>где <span class="math inline">\(d\)</span> — некоторая подстрока. Для поиска префиксов программа должна строить префиксную функцию для строки <span class="math inline">\(S\)</span>.</p>
@@ -618,20 +618,20 @@
 12 4</code></pre>
 <p><strong>Уточнение.</strong> Если один и тот же префикс можно разложить на одинаковые подстроки разными способами, то величина <span class="math inline">\(k\)</span> должна быть наибольшей, и, соответственно, <span class="math inline">\(d\)</span> — кратчайшей. Поэтому в примере выше не печатается пара чисел</p>
 <pre><code>12 2</code></pre>
-<h2 id="поиск-всех-вхождений-подстроки-в-строку-кнутморриспратт-kmpall.c">2.13 Поиск всех вхождений подстроки в строку (Кнут–Моррис–Пратт) (<code>kmpall.c</code>)</h2>
+<h3 id="поиск-всех-вхождений-подстроки-в-строку-кнутморриспратт-kmpall.c">2.13 Поиск всех вхождений подстроки в строку (Кнут–Моррис–Пратт) (<code>kmpall.c</code>)</h3>
 <p>Составьте программу <code>kmpall.c</code>, осуществляющую поиск всех вхождений подстроки <span class="math inline">\(S\)</span> в строку <span class="math inline">\(T\)</span>. В программе должен быть реализован алгоритм Кнута–Морриса–Пратта, изменённый таким образом, чтобы при нахождении очередного вхождения <span class="math inline">\(S\)</span> в <span class="math inline">\(T\)</span> алгоритм не завершался, а продолжал сканировать строку <span class="math inline">\(T\)</span>.</p>
 <p>Строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> должны передаваться в программу через аргументы командной строки. Программа должна выводить в стандартный поток вывода индексы первых символов всех вхождений <span class="math inline">\(S\)</span> в <span class="math inline">\(T\)</span>.</p>
-<h2 id="слово-составленное-из-префиксов-другого-слова-pword.c">2.14 Слово, составленное из префиксов другого слова (<code>pword.c</code>)</h2>
+<h3 id="слово-составленное-из-префиксов-другого-слова-pword.c">2.14 Слово, составленное из префиксов другого слова (<code>pword.c</code>)</h3>
 <p>Составьте программу <code>pword.c</code>, определяющую, составлена ли строка <span class="math inline">\(T\)</span> исключительно из префиксов строки <span class="math inline">\(S\)</span>.</p>
 <p>Программа получает строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> через аргументы командной строки и выводит «<code>yes</code>», если <span class="math inline">\(T\)</span> составлена из префиксов <span class="math inline">\(S\)</span>, и «<code>no</code>» — в противном случае.</p>
 <p>Например, пусть программа вызвана как</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./pword</span> abracadabra abrabracada</span></code></pre></div>
 <p>Тогда программа должна выводить в стандартный поток вывода «<code>yes</code>».</p>
-<h2 id="поиск-всех-вхождений-подстроки-в-строку-бойермур-bmall.c">2.15 Поиск всех вхождений подстроки в строку (Бойер–Мур) (<code>bmall.c</code>)</h2>
+<h3 id="поиск-всех-вхождений-подстроки-в-строку-бойермур-bmall.c">2.15 Поиск всех вхождений подстроки в строку (Бойер–Мур) (<code>bmall.c</code>)</h3>
 <p>Составьте программу <code>bmall.c</code>, осуществляющую поиск всех вхождений подстроки <span class="math inline">\(S\)</span> в строку <span class="math inline">\(T\)</span>. В программе должен быть реализован алгоритм Бойера–Мура, изменённый таким образом, чтобы при нахождении очередного вхождения <span class="math inline">\(S\)</span> в <span class="math inline">\(T\)</span> алгоритм не завершался, а продолжал сканировать строку <span class="math inline">\(T\)</span>.</p>
 <p>Строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> должны передаваться в программу через аргументы командной строки. Программа должна выводить в стандартный поток вывода индексы первых символов всех вхождений <span class="math inline">\(S\)</span> в <span class="math inline">\(T\)</span>.</p>
 <p>Строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> могут состоять из произвольных печатных знаков (коды 33…126).</p>
-<h2 id="расширенная-эвристика-стоп-символа-extstop.c">2.16 Расширенная эвристика стоп-символа (<code>extstop.c</code>)</h2>
+<h3 id="расширенная-эвристика-стоп-символа-extstop.c">2.16 Расширенная эвристика стоп-символа (<code>extstop.c</code>)</h3>
 <p>Существует модификация алгоритма Бойера–Мура, в которой эвристика стоп-символа расширена следующим образом:</p>
 <p><strong>Расширенная эвристика стоп-символа.</strong> Встретив в строке <span class="math inline">\(T\)</span> символ <span class="math inline">\(x = T[k]\)</span> такой, что <span class="math inline">\(x \neq S[i]\)</span>, мы можем расположить строку <span class="math inline">\(S\)</span> относительно строки <span class="math inline">\(T\)</span> так, что последнее вхождение <span class="math inline">\(x\)</span> в <span class="math inline">\(S\)</span>, расположенное левее <span class="math inline">\(S[i]\)</span>, окажется напротив <span class="math inline">\(T[k]\)</span>.</p>
 <p><strong>Пример.</strong> (<span class="math inline">\(T[2] = a\)</span> — стоп-символ)</p>
@@ -646,44 +646,44 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Составьте программу <code>extstop.c</code>, осуществляющую поиск первого вхождения подстроки <span class="math inline">\(S\)</span> в строку <span class="math inline">\(T\)</span>. В программе должен быть реализован вариант алгоритма Бойера–Мура, в котором не используется эвристика совпавшего суффикса, а эвристика стоп-символа расширена приведённым выше способом.</p>
 <p>Строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> должны передаваться в программу через аргументы командной строки. Программа должна вывести в стандартный поток вывода индекс первого символа первого вхождения <span class="math inline">\(S\)</span> в <span class="math inline">\(T\)</span>. Если такого вхождения нет, программа должна вывести <span class="math inline">\(len(T)\)</span>.</p>
 <p>Строки <span class="math inline">\(S\)</span> и <span class="math inline">\(T\)</span> могут состоять из произвольных печатных знаков (коды 33…126).</p>
-<h2 id="поиск-максимального-элемента-подпоследовательности-rangemax.c">2.17 Поиск максимального элемента подпоследовательности (<code>rangemax.c</code>)</h2>
+<h3 id="поиск-максимального-элемента-подпоследовательности-rangemax.c">2.17 Поиск максимального элемента подпоследовательности (<code>rangemax.c</code>)</h3>
 <p>Составьте программу <code>rangemax.c</code>, выполняющую поиск максимального элемента на различных интервалах последовательности целых чисел, которая время от времени изменяется.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит размер последовательности <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 1\,000\,000)\)</span>. Во второй строке перечислены элементы последовательности. Каждый элемент представляет собой целое число, находящееся в диапазоне от <span class="math inline">\(-10^9\)</span> до <span class="math inline">\(10^9\)</span>. Элементы разделяются пробелами.</p>
 <p>Третья строка содержит общее количество выполняемых операций <span class="math inline">\(m\)</span> <span class="math inline">\((0 &lt; m \le 20000)\)</span>. Каждая из следующих <span class="math inline">\(m\)</span> строк содержит описание операции.</p>
 <p>Операция либо имеет форму <code>MAX</code> <span class="math inline">\(l\)</span> <span class="math inline">\(r\)</span> (найти максимальный элемент подпоследовательности, начинающейся с элемента с индексом <span class="math inline">\(l\)</span> и заканчивающейся элементом с индексом <span class="math inline">\(r\)</span>), либо форму <code>UPD</code> <span class="math inline">\(i\)</span> <span class="math inline">\(v\)</span> (присвоить значение <span class="math inline">\(v\)</span> элементу с индексом <span class="math inline">\(i\)</span>).</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>MAX</code> вывести в стандартный поток вывода значение максимального элемента указанной подпоследовательности.</p>
-<h2 id="определение-гипердромов-в-строке-rangehd.c">2.18 Определение гипердромов в строке (<code>rangehd.c</code>)</h2>
+<h3 id="определение-гипердромов-в-строке-rangehd.c">2.18 Определение гипердромов в строке (<code>rangehd.c</code>)</h3>
 <p><strong>Гипердром</strong> — это строка, из букв которой можно составить палиндром. Другими словами, любая буква имеет чётное количество вхождений (возможно, нулевое) в гипердром чётной длины. Если же гипердром имеет нечётную длину, то ровно одна буква имеет нечётное количество вхождений.</p>
 <p>Составьте программу <code>rangehd.c</code>, определяющую, является ли указанная подстрока строки гипердромом. Строка время от времени может изменяться.</p>
 <p><strong>Формат входных данных.</strong> Первая строчка, считываемая со стандартного потока ввода, содержит строку размера <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 1\,000\,000)\)</span>. Строка состоит из маленьких латинских букв.</p>
 <p>Вторая строчка содержит общее количество выполняемых операций <span class="math inline">\(m\)</span> <span class="math inline">\((0 &lt; m \le 10000)\)</span>. Каждая из следующих <span class="math inline">\(m\)</span> строчек содержит описание операции.</p>
 <p>Операция либо имеет форму <code>HD</code> <span class="math inline">\(l\)</span> <span class="math inline">\(r\)</span> (определить, является ли подстрока, начинающаяся с индекса <span class="math inline">\(l\)</span> и заканчивающаяся индексом <span class="math inline">\(r\)</span>, гипердромом), либо форму <code>UPD</code> <span class="math inline">\(i\)</span> <span class="math inline">\(s\)</span> (заменить подстроку, начинающуюся с индекса <span class="math inline">\(i\)</span>, строкой <span class="math inline">\(s\)</span>).</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>HD</code> вывести в стандартный поток вывода слово «<code>YES</code>», если подстрока является гипердромом, или слово «<code>NO</code>» в противном случае.</p>
-<h2 id="количество-пиков-в-подпоследовательности-rangepeak.c">2.19 Количество пиков в подпоследовательности (<code>rangepeak.c</code>)</h2>
+<h3 id="количество-пиков-в-подпоследовательности-rangepeak.c">2.19 Количество пиков в подпоследовательности (<code>rangepeak.c</code>)</h3>
 <p>Напомним, что элемент последовательности чисел, значение которого — не меньше значений его непосредственных соседей, называется <strong>пиком</strong>.</p>
 <p>Составьте программу <code>rangepeak.c</code>, выполняющую вычисление количества пиков на различных интервалах последовательности целых чисел, которая время от времени изменяется.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит размер последовательности <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 1\,000\,000)\)</span>. Во второй строке перечислены элементы последовательности. Каждый элемент представляет собой целое число, находящееся в диапазоне от <span class="math inline">\(-10^9\)</span> до <span class="math inline">\(10^9\)</span>. Элементы разделяются пробелами.</p>
 <p>Третья строка содержит общее количество выполняемых операций <span class="math inline">\(m\)</span> <span class="math inline">\((0 &lt; m \le 20000)\)</span>. Каждая из следующих <span class="math inline">\(m\)</span> строк содержит описание операции.</p>
 <p>Операция либо имеет форму <code>PEAK</code> <span class="math inline">\(l\)</span> <span class="math inline">\(r\)</span> (вычислить количество пиков в подпоследовательности, начинающейся с элемента с индексом <span class="math inline">\(l\)</span> и заканчивающейся элементом с индексом <span class="math inline">\(r\)</span>), либо форму <code>UPD</code> <span class="math inline">\(i\)</span> <span class="math inline">\(v\)</span> (присвоить значение <span class="math inline">\(v\)</span> элементу с индексом <span class="math inline">\(i\)</span>).</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>PEAK</code> вывести в стандартный поток вывода количество пиков в указанной подпоследовательности.</p>
-<h2 id="наибольший-общий-делитель-подпоследовательности-rangegcd.c">2.20 Наибольший общий делитель подпоследовательности (<code>rangegcd.c</code>)</h2>
+<h3 id="наибольший-общий-делитель-подпоследовательности-rangegcd.c">2.20 Наибольший общий делитель подпоследовательности (<code>rangegcd.c</code>)</h3>
 <p>Составьте программу <code>rangegcd.c</code>, вычисляющую наибольший общий делитель на различных интервалах последовательности целых чисел.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит размер последовательности <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 300\,000)\)</span>. Во второй строке перечислены элементы последовательности. Каждый элемент представляет собой целое число, находящееся в диапазоне от <span class="math inline">\(-10^9\)</span> до <span class="math inline">\(10^9\)</span>. Элементы разделяются пробелами.</p>
 <p>Третья строка содержит общее количество запросов <span class="math inline">\(m\)</span> <span class="math inline">\((0 &lt; m \le 1\,000\,000)\)</span>. Каждая из следующих <span class="math inline">\(m\)</span> строк содержит запрос, который представляет собой два числа <span class="math inline">\(l\)</span> и <span class="math inline">\(r\)</span>, задающие границы интервала, на котором нужно вычислить наименьший общий делитель <span class="math inline">\((0 \le l,r &lt; n)\)</span>.</p>
 <p><strong>Формат результата работы программы.</strong> Для каждого запроса вывести в стандартный поток вывода наименьший общий делитель указанной подпоследовательности.</p>
-<h2 id="максимальное-произведение-простых-дробей-maxprod.c">2.21 Максимальное произведение простых дробей (<code>maxprod.c</code>)</h2>
+<h3 id="максимальное-произведение-простых-дробей-maxprod.c">2.21 Максимальное произведение простых дробей (<code>maxprod.c</code>)</h3>
 <p>Составьте программу <code>maxprod.c</code>, выполняющую поиск отрезка последовательности простых дробей <span class="math inline">\(\{v_i\}_0^{n-1}\)</span>, на котором произведение дробей максимально.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит размер последовательности <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 1\,000\,000)\)</span>. Во второй строке перечислены элементы последовательности. Каждый элемент записывается в виде <span class="math inline">\(a∕b\)</span>, где <span class="math inline">\(a\)</span> и <span class="math inline">\(b\)</span> — неотрицательные целые числа <span class="math inline">\((0 \le a \le 1\,000\,000, 0 &lt; b \le 1\,000\,000)\)</span>. Элементы разделяются пробелами.</p>
 <p><strong>Формат результата работы программы.</strong> Программа должна вывести в стандартный поток вывода два числа <span class="math inline">\(l\)</span> и <span class="math inline">\(r\)</span> такие, что произведение <span class="math inline">\(\prod_{i=l}^r v_i\)</span> — максимально. Если возможно несколько решений, следует выбрать решение с минимальным <span class="math inline">\(l\)</span>.</p>
-<h1 id="применение-динамических-множеств">3. Применение динамических множеств</h1>
-<h2 id="нерекурсивная-быстрая-сортировка-qsstack.c">3.1 Нерекурсивная быстрая сортировка (<code>qsstack.c</code>)</h2>
+<h2 id="применение-динамических-множеств">3. Применение динамических множеств</h2>
+<h3 id="нерекурсивная-быстрая-сортировка-qsstack.c">3.1 Нерекурсивная быстрая сортировка (<code>qsstack.c</code>)</h3>
 <p>Необходимо составить программу <code>qsstack.c</code>, осуществляющую сортировку массива целых чисел в порядке возрастания.</p>
 <p>В программе должен быть реализован нерекурсивный алгоритм быстрой сортировки, использующий в своей работе стек заданий. Каждое задание описывает координаты подмассива, который нужно отсортировать, и представляет собой структуру</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> Task <span class="op">{</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> low<span class="op">,</span> high<span class="op">;</span></span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
 <p>Программа должна считывать со стандартного потока ввода размер массива <span class="math inline">\(n\)</span> и значения элементов массива. В стандартный поток вывода должны выводиться элементы отсортированного массива.</p>
-<h2 id="стековая-машина-stackmachine.c">3.2 Стековая машина (<code>stackmachine.c</code>)</h2>
+<h3 id="стековая-машина-stackmachine.c">3.2 Стековая машина (<code>stackmachine.c</code>)</h3>
 <p>Пусть <strong>стековая машина</strong> — это устройство для выполнения арифметических операций, использующее для хранения промежуточных результатов вычислений стек целых чисел. Подразумевается, что каждая операция берёт операнды из стека и оставляет на стеке результат.</p>
 <p>Составьте программу <code>stackmachine.c</code>, моделирующую работу стековой машины.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит общее количество выполняемых операций <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 100\,000)\)</span>. Каждая из следующих <span class="math inline">\(n\)</span> строк содержит описание операции.</p>
@@ -702,14 +702,14 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 </ul>
 <p>Можно считать, что последовательность операций составлена правильно, то есть перед вызовом каждой операции стек содержит нужное ей количество операндов, деление на ноль и переполнение не возникают, и, кроме того, в результате выполнения всех операций на стеке остаётся единственное число.</p>
 <p><strong>Формат результата работы программы.</strong> В стандартный поток вывода необходимо вывести число, оставшееся на вершине стека в результате выполнения последовательности операций.</p>
-<h2 id="кольцевой-буфер-circbuf.c">3.3 Кольцевой буфер (<code>circbuf.c</code>)</h2>
+<h3 id="кольцевой-буфер-circbuf.c">3.3 Кольцевой буфер (<code>circbuf.c</code>)</h3>
 <p>Реализуйте операции <code>InitQueue</code>, <code>QueueEmpty</code>, <code>Enqueue</code> и <code>Dequeue</code> для очереди целых чисел, представленной в виде кольцевого буфера. Начальный размер буфера – <span class="math inline">\(4\)</span>. В случае переполнения размер буфера должен увеличиваться в два раза.</p>
 <p>Составьте программу <code>circbuf.c</code>, демонстрирующую работоспособность реализованных операций.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит общее количество выполняемых операций <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 100\,000)\)</span>. Каждая из следующих <span class="math inline">\(n\)</span> строк содержит описание операции.</p>
 <p>Операция либо имеет форму <code>ENQ</code> <span class="math inline">\(x\)</span> (добавить число <span class="math inline">\(x\)</span> в хвост очереди, <span class="math inline">\(-2\,000\,000\,000 &lt; x &lt; 2\,000\,000\,000\)</span>), либо форму <code>DEQ</code> (удалить головной элемент из очереди), либо форму <code>EMPTY</code> (проверить пустоту очереди).</p>
 <p>Можно считать, что последовательность операций составлена правильно, то есть перед каждой операцией <code>DEQ</code> очередь не пуста.</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>DEQ</code> вывести в стандартный поток вывода значение удаляемого головного элемента очереди. Для каждой операции <code>EMPTY</code> вывести в стандартный поток вывода «<code>true</code>» или «<code>false</code>» в зависимости от того, пуста очередь или нет.</p>
-<h2 id="очередь-с-операцией-maximum-qmax.c">3.4 Очередь с операцией Maximum (<code>qmax.c</code>)</h2>
+<h3 id="очередь-с-операцией-maximum-qmax.c">3.4 Очередь с операцией Maximum (<code>qmax.c</code>)</h3>
 <p>Реализуйте через двойной стек набор операций <code>InitQueue</code>, <code>Enqueue</code>, <code>Dequeue</code>, <code>QueueEmpty</code> и <code>Maximum</code> для работы с очередью целых чисел. Операция <code>Maximum</code> возвращает максимальное целое число, в данный момент времени находящееся в очереди. Операции <code>Enqueue</code>, <code>QueueEmpty</code> и <code>Maximum</code> должны работать за константное время, а операция <code>Dequeue</code> — за амортизированное константное время.</p>
 <p>Составьте программу <code>qmax.c</code>, демонстрирующую работоспособность реализованных операций.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит общее количество выполняемых операций <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 100\,000)\)</span>. Каждая из следующих <span class="math inline">\(n\)</span> строк содержит описание операции.</p>
@@ -717,7 +717,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Можно считать, что последовательность операций составлена правильно, то есть перед каждой операцией <code>DEQ</code> очередь не пуста.</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>DEQ</code> вывести в стандартный поток вывода значение удаляемого головного элемента очереди. Для каждой операции <code>MAX</code> вывести в стандартный поток вывода текущее максимальное число. Для каждой операции <code>EMPTY</code> вывести в стандартный поток вывода «<code>true</code>» или «<code>false</code>» в зависимости от того, пуста очередь или нет.</p>
 <p><strong>Подсказка.</strong> Как реализовать стек с операциями <code>Push</code>, <code>Pop</code> и <code>Maximum</code> за константное время?</p>
-<h2 id="слияние-последовательностей-merge.c">3.5 Слияние последовательностей (<code>merge.c</code>)</h2>
+<h3 id="слияние-последовательностей-merge.c">3.5 Слияние последовательностей (<code>merge.c</code>)</h3>
 <p>Составьте программу <code>merge.c</code>, объединяющую <span class="math inline">\(k\)</span> отсортированных по возрастанию массивов целых чисел в один отсортированный массив за время <span class="math inline">\(O(n \lg(k))\)</span>, где <span class="math inline">\(n\)</span> — общее количество элементов во всех входных массивах. Для слияния массивов воспользуйтесь очередью с приоритетами размера <span class="math inline">\(k\)</span>.</p>
 <p>Формат входных данных программы должен быть такой: первая строка, считываемая со стандартного потока ввода, содержит количество <span class="math inline">\(k\)</span> массивов, вторая строка содержит последовательность целых чисел <span class="math inline">\(n_1, n_2, \ldots , n_k\)</span>, разделённых пробелами и задающих размеры массивов, каждая из следующих <span class="math inline">\(k\)</span> строк описывает соответствующий массив, то есть <span class="math inline">\(i\)</span>-тая строка содержит <span class="math inline">\(n_i\)</span> целых чисел, отсортированных по возрастанию и разделённых пробелами.</p>
 <p>Программа должна выводить в стандартный поток вывода отсортированную по возрастанию последовательность целых чисел, полученную путём слияния массивов. Целые числа должны разделяться пробелами или символами перевода строки.</p>
@@ -730,13 +730,13 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 11 12</code></pre>
 <p>Для этих данных программа должна вывести</p>
 <pre><code>10 11 12 12 15 16 17 19 20 20 25</code></pre>
-<h2 id="моделирование-работы-вычислительного-кластера-cluster.c">3.6 Моделирование работы вычислительного кластера (<code>cluster.c</code>)</h2>
+<h3 id="моделирование-работы-вычислительного-кластера-cluster.c">3.6 Моделирование работы вычислительного кластера (<code>cluster.c</code>)</h3>
 <p>Имеется вычислительный кластер, состоящий из <span class="math inline">\(N\)</span> однопроцессорных узлов. На кластере нужно выполнить <span class="math inline">\(M\)</span> задач. Каждая задача описывается парой <span class="math inline">\(\langle t_1,t_2 \rangle\)</span>, где <span class="math inline">\(t_1\)</span> — время в микросекундах от включения кластера, начиная с которого задачу можно посылать на выполнение (до этого времени входные данные для задачи неготовы); <span class="math inline">\(t_2\)</span> — прогнозируемое время выполнения задачи в микросекундах.</p>
 <p>Для выполнения каждой задачи задействуется один узел кластера, то есть задачи невозможно распараллеливать. Кроме того, нельзя менять порядок выполнения задач: если данные для задачи <span class="math inline">\(A\)</span> оказываются подготовлены раньше, чем данные для задачи <span class="math inline">\(B\)</span>, то задача <span class="math inline">\(A\)</span> не может быть запущена позже задачи <span class="math inline">\(B\)</span>.</p>
 <p>Необходимо составить программу <code>cluster.c</code>, вычисляющую минимальное время в микросекундах от начала работы кластера, когда все задачи будут выполнены. В программе нужно использовать очередь с приоритетами для хранения времен окончания задач, запущенных на кластере.</p>
 <p>Формат входных данных программы должен быть такой: первая строка, считываемая со стандартного потока ввода, содержит количество <span class="math inline">\(N\)</span> узлов кластера, вторая строка содержит число <span class="math inline">\(M\)</span> задач, каждая из следующих <span class="math inline">\(M\)</span> строк содержит пару целых чисел <span class="math inline">\(\langle t_1,t_2 \rangle\)</span>, описывающих задачу. Пары чисел отсортированы в порядке возрастания <span class="math inline">\(t_1\)</span>, и, более того, в каждой паре <span class="math inline">\(t_1\)</span> уникально.</p>
 <p>Программа должна вывести в стандартный поток вывода целое число, выражающее время в микросекундах, прошедшее от включения кластера до момента, когда все задачи будут выполнены.</p>
-<h2 id="сортировка-списка-вставками-listisort.c">3.7 Сортировка списка вставками (<code>listisort.c</code>)</h2>
+<h3 id="сортировка-списка-вставками-listisort.c">3.7 Сортировка списка вставками (<code>listisort.c</code>)</h3>
 <p>Составьте программу <code>listisort.c</code>, выполняющую сортировку двунаправленного кольцевого списка целых чисел по возрастанию. В программе должен быть реализован алгоритм сортировки вставками.</p>
 <p>Элементы списка должны быть представлены структурой</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> Elem <span class="op">{</span></span>
@@ -745,7 +745,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div>
 <p>Алгоритм сортировки вставками, адаптированный для списков, должен выполнять не более <span class="math inline">\(n\)</span> обменов элементов, где <span class="math inline">\(n\)</span> — длина списка.</p>
 <p>Программа должна считывать со стандартного потока ввода размер списка <span class="math inline">\(n\)</span> и значения элементов списка. В стандартный поток вывода должны выводиться элементы отсортированного списка.</p>
-<h2 id="сортировка-списка-пузырьком-listbsort.c">3.8 Сортировка списка пузырьком (<code>listbsort.c</code>)</h2>
+<h3 id="сортировка-списка-пузырьком-listbsort.c">3.8 Сортировка списка пузырьком (<code>listbsort.c</code>)</h3>
 <p>Составьте программу <code>listbsort.c</code>, выполняющую сортировку слов в предложении в порядке возрастания их длин. Слова в предложении разделены одним или несколькими пробелами. Программа должна формировать однонаправленный список слов, а затем сортировать этот список пузырьком.</p>
 <p>Функция <code>bsort</code>, реализующая алгоритм сортировки, должна быть объявлена как</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> Elem <span class="op">*</span>bsort<span class="op">(</span><span class="kw">struct</span> Elem <span class="op">*</span>list<span class="op">)</span></span>
@@ -768,7 +768,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Можно считать, что последовательность операций составлена правильно.</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>LOOKUP</code> вывести в стандартный поток вывода строку, связанную с ключом <span class="math inline">\(k\)</span>. Для каждой операции <code>RANK</code> вывести в стандартный поток вывода порядковый номер словарной пары с ключом <span class="math inline">\(k\)</span>.</p>
 <p><strong>Указание.</strong> Представление списка с пропусками нужно модифицировать следующим образом: каждый элемент списка должен включать в себя массив целых чисел <code>span</code> размера <span class="math inline">\(m\)</span>, где <span class="math inline">\(m\)</span> — количество уровней в списке. При этом <span class="math inline">\(i\)</span>-тый элемент массива <code>span</code> должен содержать расстояние от данного элемента до следующего элемента на <span class="math inline">\(i\)</span>-том уровне.</p>
-<h2 id="ранги-вершин-бинарного-дерева-поиска-ranktree.c">3.10 Ранги вершин бинарного дерева поиска (<code>ranktree.c</code>)</h2>
+<h3 id="ранги-вершин-бинарного-дерева-поиска-ranktree.c">3.10 Ранги вершин бинарного дерева поиска (<code>ranktree.c</code>)</h3>
 <p>Операция <code>SearchByRank</code> : <span class="math inline">\(A \times \mathbb{N} \to P\)</span> для ассоциативного массива возвращает словарную пару с заданным номером в отсортированной последовательности входящих в ассоциативный массив словарных пар.</p>
 <p>Модифицируйте представление и реализацию бинарного дерева поиска, чтобы операция <code>SearchByRank</code> для него работала за время <span class="math inline">\(O(h)\)</span>, где <span class="math inline">\(h\)</span> — высота дерева.</p>
 <p>Составьте программу <code>ranktree.c</code>, демонстрирующую работоспособность реализованной операции.</p>
@@ -777,7 +777,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Можно считать, что последовательность операций составлена правильно.</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>LOOKUP</code> вывести в стандартный поток вывода строку, связанную с ключом <span class="math inline">\(k\)</span>. Для каждой операции <code>SEARCH</code> вывести в стандартный поток вывода строку, связанную с ключом, имеющим порядковый номер <span class="math inline">\(x\)</span>.</p>
 <p><strong>Указание.</strong> Представление бинарного дерева поиска нужно модифицировать следующим образом: в каждую вершину нужно добавить поле <code>count</code>, содержащее размер поддерева с корнем в данной вершине. Размер поддерева — это количество вершин в нём.</p>
-<h2 id="лексический-анализ-lexavl.c">3.11 Лексический анализ (<code>lexavl.c</code>)</h2>
+<h3 id="лексический-анализ-lexavl.c">3.11 Лексический анализ (<code>lexavl.c</code>)</h3>
 <p>Пусть <em>константа</em> — это непустая последовательность десятичных цифр.</p>
 <p>Пусть <em>специальный знак</em> — это один из следующих символов: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code>.</p>
 <p>Пусть <em>идентификатор</em> — это непустая последовательность латинских букв и десятичных цифр, начинающаяся с буквы.</p>
@@ -810,7 +810,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Операция либо имеет форму <code>ASSIGN</code> <span class="math inline">\(i\)</span> <span class="math inline">\(v\)</span> (присвоить значение <span class="math inline">\(v\)</span> элементу разреженного массива с индексом <span class="math inline">\(i\)</span>; <span class="math inline">\(0 \le i &lt; 1\,000\,000\,000\)</span>; <span class="math inline">\(-1\,000\,000\,000 &lt; v &lt; 1\,000\,000\,000)\)</span>, либо форму <code>AT</code> <span class="math inline">\(i\)</span> (вывести значение элемента разреженного массива с индексом <span class="math inline">\(i\)</span>).</p>
 <p><strong>Формат результата работы программы.</strong> Для каждой операции <code>AT</code> вывести в стандартный поток вывода значение элемента разреженного массива с индексом <span class="math inline">\(i\)</span>.</p>
 <p><strong>Указание.</strong> Пусть хеш-функция вычисляется как <span class="math inline">\(h(i)=i \mod m\)</span>.</p>
-<h2 id="количество-подпоследовательностей-на-которых-побитовое-исключающее-или-даёт-ноль-zeroxor.c">3.13 Количество подпоследовательностей, на которых побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ даёт ноль (<code>zeroxor.c</code>)</h2>
+<h3 id="количество-подпоследовательностей-на-которых-побитовое-исключающее-или-даёт-ноль-zeroxor.c">3.13 Количество подпоследовательностей, на которых побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ даёт ноль (<code>zeroxor.c</code>)</h3>
 <p>Пусть дана последовательность из <span class="math inline">\(n\)</span> целых чисел, где <span class="math inline">\(0 &lt; n \le 100\,000\)</span>, и каждое целое число находится в диапазоне от <span class="math inline">\(-2^{31}\)</span> до <span class="math inline">\(2^{31} - 1\)</span>. Составьте программу <code>zeroxor.c</code>, вычисляющую, сколько в последовательности существует подпоследовательностей таких, что побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ их элементов равно <span class="math inline">\(0\)</span>.</p>
 <p>Например, в последовательности <span class="math inline">\(a = \{0,14,14,2, 2,0\}\)</span> таких подпоследовательностей <span class="math inline">\(10\)</span> штук:</p>
 <ul>
@@ -828,7 +828,7 @@ S= &amp;  &amp; c &amp; a &amp; \left\langle \mathbf{b}\right\rangle  &amp; \mat
 <p>Программа должна считывать из стандартного потока ввода число <span class="math inline">\(n\)</span>, а затем <span class="math inline">\(n\)</span> чисел, образующих последовательность. Программа должна выводить количество подпоследовательностей в стандартный поток вывода.</p>
 <p><strong>Указание.</strong> Пусть побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ подпоследовательностей <span class="math inline">\([0 : i]\)</span> и <span class="math inline">\([0 : j]\)</span> равно <span class="math inline">\(x\)</span>, и не существует такого <span class="math inline">\(k\)</span>, что <span class="math inline">\(i &lt; k &lt; j\)</span> и побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ подпоследовательности <span class="math inline">\([0 : k ]\)</span> равно <span class="math inline">\(x\)</span>.</p>
 <p>Пусть также мы знаем количество подпоследовательностей с правой границей <span class="math inline">\(i\)</span>, побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ которых равно <span class="math inline">\(0\)</span>. Очевидно, что количество подпоследовательностей с правой границей <span class="math inline">\(j\)</span>, побитовое ИСКЛЮЧАЮЩЕЕ ИЛИ которых равно <span class="math inline">\(0\)</span>, на единицу больше.</p>
-<h2 id="строки-с-общими-префиксами-ptrie.c">3.14 Строки с общими префиксами (<code>ptrie.c</code>)</h2>
+<h3 id="строки-с-общими-префиксами-ptrie.c">3.14 Строки с общими префиксами (<code>ptrie.c</code>)</h3>
 <p>Реализуйте структуру данных, представляющую множество строк с операциями <code>Insert</code> (добавление строки в множество), <code>Delete</code> (удаление строки из множества) и <code>Prefix</code> (подсчёт количества строк множества, имеющих указанных префикс). Операции <code>Insert</code> и <code>Delete</code> должны работать за время <span class="math inline">\(O(len(k))\)</span>, где <span class="math inline">\(k\)</span> — добавляемая или удаляемая строка, а операция <code>Prefix</code> — за время <span class="math inline">\(O(len(p))\)</span>, где <span class="math inline">\(p\)</span> — префикс.</p>
 <p>Составьте программу <code>ptrie.c</code>, демонстрирующую работоспособность реализованных операций.</p>
 <p><strong>Формат входных данных.</strong> Первая строка, считываемая со стандартного потока ввода, содержит общее количество выполняемых операций <span class="math inline">\(n\)</span> <span class="math inline">\((0 &lt; n \le 10000)\)</span>. Каждая из следующих <span class="math inline">\(n\)</span> строк содержит описание операции.</p>
